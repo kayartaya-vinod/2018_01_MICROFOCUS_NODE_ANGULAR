@@ -1,0 +1,23 @@
+{
+  "name": "day1",
+  "version": "1.0.0",
+  "description": "Just started working on node.js",
+  "main": "ex01.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jasmine": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kayartayavinod"
+  },
+  "keywords": [
+    "learning"
+  ],
+  "author": "Vinod <vinod@vinod.co>",
+  "license": "MIT"
+}

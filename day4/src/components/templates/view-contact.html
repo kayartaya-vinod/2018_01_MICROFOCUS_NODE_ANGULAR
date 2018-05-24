@@ -1,0 +1,37 @@
+<div class="text-center">
+    {{ contact.gender | title }} 
+    {{ contact.firstname | uppercase }} 
+    {{ contact.lastname | uppercase }}
+</div>
+
+<div style="margin: 50px"></div>
+
+<div class="row">
+    <div class="col-xs-4">Date of birth</div>
+    <div class="col-xs-8">{{contact.dob}}</div>
+
+    <div class="col-xs-4">Age</div>
+    <div class="col-xs-8">{{contact.dob | age: 1}}</div>
+
+    <div class="col-xs-4">Email id</div>
+    <div class="col-xs-8">{{contact.email}}</div>
+
+    <div class="col-xs-4">Phone number</div>
+    <div class="col-xs-8">{{contact.phone}}</div>
+
+    <div class="col-xs-4">City</div>
+    <div class="col-xs-8">{{contact.city}}</div>
+
+</div>
+<div style="margin: 50px">
+</div>
+<div>
+    <div class="col-xs-4"></div>
+    <div class="col-xs-8">
+        <a href="#" class="btn btn-primary" [routerLink]="['/edit-contact', contact._id]">
+            <span class="glyphicon glyphicon-pencil"></span></a>
+        <button class="btn btn-danger" (click)="deleteContact()" >
+            <span class="glyphicon glyphicon-trash"></span></button>
+
+    </div>
+</div>

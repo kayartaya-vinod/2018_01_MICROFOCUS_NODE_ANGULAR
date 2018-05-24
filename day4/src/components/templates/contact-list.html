@@ -1,0 +1,14 @@
+<div>
+    <!-- ul.list-group>li.list-group-item{list item $}*10 -->
+    <ul class="list-group">
+        <button class="list-group-item" 
+            [routerLink] = "['/view-contact', c._id]"
+            (click) = "storeInSessionStorage(c)"
+            *ngFor="let c of contacts">
+
+            {{ c.gender | title }}
+            {{ c.firstname }}
+            {{ c.lastname }}
+        </button>
+    </ul>    
+</div>
